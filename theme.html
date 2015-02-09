@@ -23,9 +23,9 @@
     {% if post.photos %}
     {% for photo in post.photos %}
         {% if loop.index == 1 and photo %}
-        <meta property="og:image" content="{{ photo.width_400 }}">
+        <meta property="og:image" content="{{ photo.width_400 }} gogoog">
         {% else %}
-        <meta property="og:image" content="{{ site.avatar }}">
+        <meta property="og:image" content="{{ photo.width_400 }} gogogo1">
         {% endif %}
     {% endfor %}
     {% endif %}
