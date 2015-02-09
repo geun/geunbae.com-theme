@@ -23,9 +23,9 @@
     {% if post.photos %}
     {% for photo in post.photos %}
         {% if loop.index == 1 and photo %}
-        <meta property="og:image" content="{{ photo.width_400 }} gogoog">
+        <meta property="og:image" content="{{ photo.width_400 }} { photo }}">
         {% else %}
-        <meta property="og:image" content="{{ photo.width_400 }} gogogo1">
+        <meta property="og:image" content="{{ site.avatar }}">
         {% endif %}
     {% endfor %}
     {% endif %}
@@ -114,7 +114,6 @@
                         <a href="/"/>근[Ge:un]</a>
                     </h1>
                     <p class="site-bio">{{ site.bio }}</p>
-                    <p class="site-notice">사이트 이전중</p>
                 </div>
             </div>
         </div>
