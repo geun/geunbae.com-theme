@@ -23,7 +23,7 @@
     {% if post.photos %}
     {% for photo in post.photos %}
         {% if loop.index == 1 and photo %}
-        <meta property="og:image" content="{{ photo.width_400 }} {{ photo }}">
+        <meta property="og:image" content="{{ photo.width_600 }}">
         {% else %}
         <meta property="og:image" content="{{ site.avatar }}">
         {% endif %}
